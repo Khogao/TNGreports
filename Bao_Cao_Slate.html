@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo Thẩm định Đầu tư - Dự án Nam Phát</title>
+    <style>
+        /* Slate Theme CSS - Embedded for 100% Offline */
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            vertical-align: baseline
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block
+        }
+
+        ol,
+        ul {
+            list-style: none
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        body {
+            box-sizing: border-box;
+            color: #373737;
+            background: #212121;
+            font-size: 16px;
+            font-family: 'Segoe UI', Calibri, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 10px 0;
+            font-weight: 700;
+            color: #222222;
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            letter-spacing: -1px
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700
+        }
+
+        h2 {
+            padding-bottom: 10px;
+            font-size: 32px;
+            border-bottom: 2px solid #ddd
+        }
+
+        h3 {
+            font-size: 24px
+        }
+
+        h4 {
+            font-size: 21px
+        }
+
+        h5 {
+            font-size: 18px
+        }
+
+        h6 {
+            font-size: 16px
+        }
+
+        p {
+            margin: 10px 0 15px 0
+        }
+
+        footer p {
+            color: #f2f2f2
+        }
+
+        a {
+            text-decoration: none;
+            color: #0F79D0;
+            transition: color 0.5s ease
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline
+        }
+
+        em,
+        cite {
+            font-style: italic
+        }
+
+        strong {
+            font-weight: bold
+        }
+
+        blockquote {
+            color: #666;
+            margin-bottom: 20px;
+            padding: 0 0 0 20px;
+            border-left: 3px solid #bbb
+        }
+
+        ul,
+        ol,
+        dl {
+            margin-bottom: 15px
+        }
+
+        ul {
+            list-style-position: inside;
+            list-style: disc;
+            padding-left: 20px
+        }
+
+        ol {
+            list-style-position: inside;
+            list-style: decimal;
+            padding-left: 20px
+        }
+
+        hr {
+            height: 1px;
+            margin: 20px 0;
+            border: none;
+            background: #ddd
+        }
+
+        table {
+            border: 1px solid #373737;
+            margin-bottom: 20px;
+            text-align: left;
+            width: 100%
+        }
+
+        th {
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            padding: 10px;
+            background: #373737;
+            color: #fff
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #373737
+        }
+
+        .outer {
+            width: 100%
+        }
+
+        .inner {
+            position: relative;
+            max-width: 800px;
+            padding: 20px 10px;
+            margin: 0 auto
+        }
+
+        #header_wrap {
+            background: linear-gradient(to bottom, #373737, #212121)
+        }
+
+        #header_wrap .inner {
+            padding: 50px 10px 30px 10px
+        }
+
+        #project_title {
+            margin: 0;
+            color: #fff;
+            font-size: 42px;
+            font-weight: 700;
+            text-shadow: #111 0px 0px 10px
+        }
+
+        #project_tagline {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 300;
+            background: none;
+            text-shadow: #111 0px 0px 10px
+        }
+
+        #main_content_wrap {
+            background: #f2f2f2;
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #111
+        }
+
+        #main_content {
+            padding-top: 40px
+        }
+
+        #footer_wrap {
+            background: #212121
+        }
+
+        /* Custom Report Styles */
+        .alert {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px
+        }
+
+        .alert-danger {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626
+        }
+
+        .alert-warning {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b
+        }
+
+        .alert h3,
+        .alert h4 {
+            margin-top: 0;
+            color: #991b1b
+        }
+
+        .alert-warning h4 {
+            color: #92400e
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #dc2626, #f97316);
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 18px
+        }
+
+        .signature-table {
+            margin-top: 40px
+        }
+
+        .signature-table td {
+            padding: 20px;
+            text-align: center;
+            border: none
+        }
+
+        .status-good {
+            color: #16a34a
+        }
+
+        .status-bad {
+            color: #dc2626
+        }
+
+        .status-warning {
+            color: #d97706
+        }
+
+        @media screen and (max-width:480px) {
+            body {
+                font-size: 14px
+            }
+
+            .inner {
+                min-width: 320px;
+                max-width: 480px
+            }
+
+            #project_title {
+                font-size: 32px
+            }
+
+            h1 {
+                font-size: 28px
+            }
+
+            h2 {
+                font-size: 24px
+            }
+
+            h3 {
+                font-size: 21px
+            }
+
+            h4 {
+                font-size: 18px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <header id="header_wrap" class="outer">
+            <div class="inner">
+                <h1 id="project_title">Báo cáo Thẩm định Đầu tư</h1>
+                <h2 id="project_tagline">Dự án Nhà máy Viên nén Năng lượng HD Nam Phát - Quảng Trị</h2>
+                <p style="color:#ccc;margin-top:15px"><strong>Ban Thẩm định:</strong> Trần Quang Toán • Lê Nguyên Phi •
+                    Phạm Thiện<br>
+                    <strong>Ngày:</strong> 29/01/2026
+                </p>
+            </div>
+        </header>
+
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
+
+                <h2><span class="badge">⚡ XẾP HẠNG: RỦI RO CAO</span></h2>
+
+                <div class="alert alert-danger">
+                    <h3>🛑 Khuyến nghị Đầu tư: KHÔNG KHUYẾN NGHỊ ĐẦU TƯ</h3>
+                    <p>Không giải ngân do rủi ro quá lớn về năng lực quản trị, nguồn nguyên liệu và kỹ thuật chưa được
+                        giải quyết.</p>
+                </div>
+
+                <hr>
+
+                <h2>📋 Tóm tắt Điều hành</h2>
+
+                <h3>Thông tin Dự án Cơ bản</h3>
+                <table>
+                    <tr>
+                        <th>Hạng mục</th>
+                        <th>Chi tiết</th>
+                    </tr>
+                    <tr>
+                        <td>💰 <strong>Tổng mức Đầu tư</strong></td>
+                        <td><strong>730 tỷ VNĐ</strong> (Theo Giấy chứng nhận ĐT) → <strong>712,5 tỷ VNĐ</strong> (Thẩm
+                            định thực tế)<br><small>Vốn CSH: 30% | Vay: 70%</small></td>
+                    </tr>
+                    <tr>
+                        <td>🏭 <strong>Công suất Thiết kế</strong></td>
+                        <td>180.000 tấn/năm - Viên nén sinh khối (Công nghệ KAHL - Đức)</td>
+                    </tr>
+                    <tr>
+                        <td>🌍 <strong>Thị trường Mục tiêu</strong></td>
+                        <td>Nhật - Hàn. Giá kỳ vọng: $147-287/tấn (FOB)</td>
+                    </tr>
+                    <tr>
+                        <td>📍 <strong>Vị trí</strong></td>
+                        <td>KCN Nam Đông Hà, Quảng Trị - 20km ra cảng Cửa Việt</td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <h2>🔴 Các Phát hiện Quan trọng (Rủi ro Trọng yếu)</h2>
+
+                <div class="alert alert-danger">
+                    <h4>Rủi ro #1: Thiếu hụt Nguyên liệu FSC nghiêm trọng</h4>
+                    <p>Mục tiêu 5.000-7.000ha nhưng thực tế chỉ 121 hộ đăng ký (~200ha). <strong>Thiếu 97% nguồn nguyên
+                            liệu cam kết.</strong></p>
+                </div>
+
+                <div class="alert alert-danger">
+                    <h4>Rủi ro #2: Không có Tổng thầu EPC</h4>
+                    <p>Mua thiết bị rời rạc (KAHL + GGS) không có đơn vị chịu trách nhiệm tổng thể. Rủi ro về tính đồng
+                        bộ và tích hợp hệ thống.</p>
+                </div>
+
+                <div class="alert alert-danger">
+                    <h4>Rủi ro #3: Sai lệch Năng lực Cốt lõi</h4>
+                    <p>Tập đoàn Thịnh Nguyên chuyên về <strong>Bất động sản</strong>, chưa có kinh nghiệm trong lĩnh vực
+                        <strong>Sản xuất Công nghiệp</strong>.
+                    </p>
+                </div>
+
+                <div class="alert alert-danger">
+                    <h4>Rủi ro #4: Bài toán Tài chính chưa minh bạch</h4>
+                    <p>Thiếu sự rõ ràng giữa <strong>các hạng mục đã đầu tư</strong> và <strong>các hạng mục CẦN đầu tư
+                            thêm</strong>. Nguy cơ phát sinh chi phí "ngầm".</p>
+                </div>
+
+                <div class="alert alert-warning">
+                    <h4>⚠️ Độ nhạy Tài chính Cao</h4>
+                    <p>NPV âm (-190 tỷ) nếu doanh thu giảm 10%. Dự phòng tài chính thấp.</p>
+                </div>
+
+                <hr>
+
+                <h2>📊 Chỉ số Hiệu quả Đầu tư</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Chỉ tiêu</th>
+                            <th>Báo cáo FS</th>
+                            <th>Thẩm định Thực tế</th>
+                            <th>Đánh giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>NPV</strong></td>
+                            <td class="status-good">326 tỷ VNĐ ✅</td>
+                            <td class="status-bad">50-100 tỷ VNĐ ❌</td>
+                            <td class="status-bad">Giảm 70%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>IRR</strong></td>
+                            <td class="status-good">19,1% ✅</td>
+                            <td class="status-warning">11-13% ⚠️</td>
+                            <td class="status-warning">Chỉ cao hơn lãi vay 2%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Payback</strong></td>
+                            <td>4 năm 2 tháng</td>
+                            <td class="status-bad">6-7 năm ❌</td>
+                            <td class="status-bad">Chậm 50%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Điểm hòa vốn</strong></td>
+                            <td>60% công suất</td>
+                            <td class="status-bad">75-80% ❌</td>
+                            <td class="status-bad">Áp lực cao</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+                <h2>🔍 Phân tích SWOT</h2>
+
+                <h3>💪 ĐIỂM MẠNH (Strengths)</h3>
+                <ul>
+                    <li><strong>🔧 Công nghệ KAHL Flat Die:</strong> Phù hợp gỗ keo/bạch đàn VN, OPEX thấp, đạt chuẩn
+                        ENPlus A1/A2</li>
+                    <li><strong>📍 Vị trí Chiến lược:</strong> 20km ra cảng Cửa Việt, tiết kiệm 3-5 USD/tấn vận tải</li>
+                    <li><strong>💼 Cam kết Vốn Tốt:</strong> Vốn CSH 30%, giấy phép đầy đủ, thuê đất đến 2070</li>
+                </ul>
+
+                <h3>⚠️ ĐIỂM YẾU (Weaknesses)</h3>
+                <ul>
+                    <li><strong>🌲 Thiếu hụt Nguyên liệu FSC:</strong> Cam kết 5.000-7.000 ha, thực tế ~200 ha (Gap:
+                        97%)</li>
+                    <li><strong>🔧 Không có Tổng thầu EPC:</strong> Tách riêng nhà xưởng, thiết bị, M&E - rủi ro tích
+                        hợp cao</li>
+                    <li><strong>👥 Thiếu Nhân lực Chuyên môn:</strong> Chưa có Giám đốc Vận hành, thiếu đội ngũ kỹ thuật
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h2>💡 Kết luận & Khuyến nghị</h2>
+
+                <h3>Cơ sở Ra Quyết định</h3>
+                <p>Dựa trên phân tích toàn diện, Ban Thẩm định nhận thấy dự án Nam Phát tồn tại nhiều rủi ro trọng yếu
+                    chưa được giải quyết:</p>
+                <ol>
+                    <li><strong>Rủi ro Nguyên liệu:</strong> Thiếu 97% nguồn nguyên liệu FSC cam kết</li>
+                    <li><strong>Rủi ro Kỹ thuật:</strong> Không có Tổng thầu EPC chịu trách nhiệm tích hợp</li>
+                    <li><strong>Rủi ro Năng lực:</strong> Chủ đầu tư chưa có kinh nghiệm sản xuất công nghiệp</li>
+                    <li><strong>Rủi ro Tài chính:</strong> NPV thực tế giảm 70% so với báo cáo FS</li>
+                </ol>
+
+                <div class="alert alert-danger">
+                    <h3>KIẾN NGHỊ HĐQT: DỪNG CẤP VỐN (STOP INVESTMENT)</h3>
+                    <p>Không đề xuất giải ngân cho đến khi Chủ đầu tư giải quyết được các rủi ro trọng yếu nêu trên.</p>
+                </div>
+
+                <hr>
+
+                <h3>Thay mặt Ban Thẩm định</h3>
+                <table class="signature-table">
+                    <tr>
+                        <td><strong>Trần Quang Toán</strong><br>Trưởng Ban<br><br>_____________</td>
+                        <td><strong>Lê Nguyên Phi</strong><br>Thành viên<br><br>_____________</td>
+                        <td><strong>Phạm Thiện</strong><br>Thành viên<br><br>_____________</td>
+                    </tr>
+                </table>
+                <p style="text-align:center;margin-top:20px"><em>Ngày ký: 29/01/2026</em></p>
+
+            </section>
+        </div>
+
+        <footer id="footer_wrap" class="outer">
+            <div class="inner">
+                <p style="color:#888;text-align:center">© 2026 Tập đoàn Thịnh Nguyên - Ban Thẩm định Đầu tư</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
