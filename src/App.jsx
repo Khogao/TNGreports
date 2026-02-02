@@ -5,6 +5,7 @@ import ConstructionPlanning from './components/ConstructionPlanning'
 import DesignCriteria from './components/DesignCriteria'
 import ScopeOfWork from './components/ScopeOfWork'
 import InvestmentAnalysis from './components/InvestmentAnalysis'
+import ActionPlanPage from './components/ActionPlanPage'
 
 function App() {
   return (
@@ -54,6 +55,12 @@ function App() {
                     <span className="list-item-text">V. ĐÁNH GIÁ & KHUYẾN NGHỊ</span>
                   </a>
                 </li>
+                <li className="list-item" style={{ background: '#dbeafe', borderLeftColor: '#2563eb' }}>
+                  <a href="#action-plan" style={{ textDecoration: 'none', color: '#1e40af', fontWeight: 'bold' }}>
+                    <span className="list-item-number">📋</span>
+                    <span className="list-item-text">VI. ACTION PLAN - DANH MỤC THÁO GỠ</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </section>
@@ -81,6 +88,10 @@ function App() {
 
           <div id="analysis">
             <InvestmentAnalysis />
+          </div>
+
+          <div id="action-plan">
+            <ActionPlanPage />
           </div>
         </div>
       </main>
